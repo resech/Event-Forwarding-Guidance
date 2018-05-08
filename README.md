@@ -1,5 +1,7 @@
 # Event Forwarding Guidance
 
+## Originally forked from IDAGOV Event Forwarding Guidance 
+
 This project hosts [scripts](./scripts/) and configuration files for aiding administrators in collecting security relevant Windows event logs using Windows Event Forwarding (WEF), and contains a recommended minimum set of events to collect. See [Spotting the Adversary with Windows Event Log Monitoring](https://www.iad.gov/iad/library/ia-guidance/security-configuration/applications/spotting-the-adversary-with-windows-event-log-monitoring.cfm) for more details on setting up WEF.
 
 ## Recommended Events

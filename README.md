@@ -199,6 +199,7 @@ Monitoring network activities can be performed in multiple ways ranging from a n
 | Encrypted Data Recovery Policy Changed | 4714 | Information | Security | Microsoft-Windows-Security-Auditing |
 | Kerberos Policy Changed | 4713 | Information | Security | Microsoft-Windows-Security-Auditing |
 | Kerberos Service Ticket Req. Failed | 4769 | Information | Security | Microsoft-Windows-Security-Auditing |
+| Kerberos Pre-Authentication Failed | 4771 | Information | Security | Microsoft-Windows-Security-Auditing |
 | Network Policy Server Denied Access | 6273 | Information | Security | Microsoft-Windows-Security-Auditing |
 | Network Policy Server Discarded Accounting Request | 6275 | Information | Security | Microsoft-Windows-Security-Auditing |
 | Network Policy Server Discarded Request | 6274 | Information | Security | Microsoft-Windows-Security-Auditing |
@@ -376,6 +377,11 @@ Scheduled tasks can be maliciously created or deleted. The Task Scheduler can be
 | Task Deleted | 141 | Information | Microsoft-Windows-TaskScheduler/Operational | Microsoft-Windows-TaskScheduler |
 | Task Disabled | 142 | Information | Microsoft-Windows-TaskScheduler/Operational | Microsoft-Windows-TaskScheduler |
 | Task Launched | 200 | Information | Microsoft-Windows-TaskScheduler/Operational | Microsoft-Windows-TaskScheduler |
+| Task Created | 4698 | Information | Microsoft-Windows-Security-Auditing | Microsoft-Windows-Security-Auditing |
+| Task Deleted | 4699 | Information | Microsoft-Windows-Security-Auditing | Microsoft-Windows-Security-Auditing |
+| Task Enabled | 4700 | Information | Microsoft-Windows-Security-Auditing | Microsoft-Windows-Security-Auditing |
+| Task Disabled | 4701 | Information | Microsoft-Windows-Security-Auditing | Microsoft-Windows-Security-Auditing |
+| Task Updated | 4702 | Information | Microsoft-Windows-Security-Auditing | Microsoft-Windows-Security-Auditing |
 ### Windows Defender Activities
 Spyware and malware remain a serious problem and Microsoft developed an antispyware and antivirus, Windows Defender, to combat this threat. Any notifications of detecting, removing, or preventing these malicious programs should be investigated. In the event Windows Defender fails to operate normally, administrators should correct the issue immediately to prevent the possibility of infection or further infection. If a third-party antivirus and antispyware product is currently in use, the collection of these events is not necessary.
 

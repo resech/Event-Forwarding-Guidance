@@ -1,5 +1,6 @@
 ## Guidance
 NSA Information Assurance has a security guide called [Spotting the Adversary with Windows Event Log Monitoring](https://www.iad.gov/iad/library/ia-guidance/security-configuration/applications/spotting-the-adversary-with-windows-event-log-monitoring.cfm).
+Additional events from SANS and other resources.
 
 ## Links
 * [Microsoft Windows Event Forwarding Resources](https://aka.ms/wef)
@@ -9,6 +10,7 @@ NSA Information Assurance has a security guide called [Spotting the Adversary wi
 * [Microsoft Sysmon Tool](https://technet.microsoft.com/en-us/sysinternals/sysmon)
 * [ASD GitHub Windows Event Logging repository](https://github.com/AustralianCyberSecurityCentre/windows_event_logging)
 * [ASD Windows Event Logging Technical Guidance](https://asd.gov.au/publications/protect/Windows_Event_Logging_Technical_Guidance.pdf)
+* [Finding Bad with Splunk](https://www.sans.org/reading-room/whitepapers/critical/finding-bad-splunk-37482)
 
 # License
 See [LICENSE](./LICENSE.md).

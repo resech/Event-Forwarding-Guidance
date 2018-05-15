@@ -56,10 +56,42 @@ Lockout events for domain accounts are generated on the domain controller wherea
 | Successful User Account Login | 4624 | Information | Security | Microsoft-Windows-Security-Auditing |
 | Temp Profile Logon | 1511 | Error | Application | Microsoft-Windows-User Profiles Service |
 | User Account Deleted | 4726 | Information | Security | Microsoft-Windows-Security-Auditing |
+| User Account Changed | 4738 | Information | Security | Microsoft-Windows-Security-Auditing |
 | User Account Disabled | 4725 | Information | Security | Microsoft-Windows-Security-Auditing |
 | User Account Unlocked | 4767 | Information | Security | Microsoft-Windows-Security-Auditing |
 | User Added to Privileged Group | 4728, 4732, 4756 | Information | Security | Microsoft-Windows-Security-Auditing |
 | User Right Assigned | 4704 | Information | Security | Microsoft-Windows-Security-Auditing |
+| User Right Removed | 4705 | Information | Security | Microsoft-Windows-Security-Auditing |
+| System Security Access Granted | 4717 | Information | Security | Microsoft-Windows-Security-Auditing |
+| System Security Access Removed | 4718 | Information | Security | Microsoft-Windows-Security-Auditing |
+| Member Added to Security Disabled Local Group | 4746 | Success | Security | Microsoft-Windows-Security-Auditing |
+| Member Removed from  Security Disabled Local Group | 4747 | Success | Security | Microsoft-Windows-Security-Auditing |
+| Member Added to Security Disabled Global Group | 4751 | Success | Security | Microsoft-Windows-Security-Auditing |
+| Member Removed from Security Disabled Global Group | 4752 | Success | Security | Microsoft-Windows-Security-Auditing |
+| Member Added to Security Disabled Universal Group | 4761 | Success | Security | Microsoft-Windows-Security-Auditing |
+| Member Removed from Security Enabled Universal Group | 4757 | Success | Security | Microsoft-Windows-Security-Auditing |
+| Member Removed from Security Disabled Universal Group | 4762 | Success | Security | Microsoft-Windows-Security-Auditing |
+| Member Removed from Security Enabled Global Group | 4729 | Success | Security | Microsoft-Windows-Security-Auditing |
+| An attempt was made to reset an accounts password | 4723, 4724 | Success | Security | Microsoft-Windows-Security-Auditing |
+| A Groups Type was Changed | 4764 | Success | Security | Microsoft-Windows-Security-Auditing |
+| Security-disabled Local Group Created | 4744 | Success | Security | Microsoft-Windows-Security-Auditing |
+| Security-disabled Local Group Changed | 4745 | Success | Security | Microsoft-Windows-Security-Auditing |
+| Security-disabled Local Group Deleted | 4748 | Success | Security | Microsoft-Windows-Security-Auditing |
+| Security-enabled Global Group Created | 4727 | Success | Security | Microsoft-Windows-Security-Auditing |
+| Security-enabled Global Group Modification | 4737 | Success | Security | Microsoft-Windows-Security-Auditing |
+| Security-enabled Global Group Deleted | 4730 | Success | Security | Microsoft-Windows-Security-Auditing |
+| Security-disabled Global Group Created | 4749 | Success | Security | Microsoft-Windows-Security-Auditing |
+| Security-disabled Global Group Modification | 4750 | Success | Security | Microsoft-Windows-Security-Auditing |
+| Security-disabled Global Group Deleted | 4753 | Success | Security | Microsoft-Windows-Security-Auditing |
+| Security-enabled Universal Group Created | 4754 | Success | Security | Microsoft-Windows-Security-Auditing |
+| Security-enabled Universal Group Modification | 4755 | Success | Security | Microsoft-Windows-Security-Auditing |
+| Security-enabled Universal Group Deleted | 4758 | Success | Security | Microsoft-Windows-Security-Auditing |
+| Security-disabled Universal Group Created | 4759 | Success | Security | Microsoft-Windows-Security-Auditing |
+| Security-disabled Universal Group Modification | 4760 | Success | Security | Microsoft-Windows-Security-Auditing |
+| Security-disabled Universal Group Deleted | 4763 | Success | Security | Microsoft-Windows-Security-Auditing |
+| Computer Account Created | 4741 | Success | Security | Microsoft-Windows-Security-Auditing |
+| Computer Account Changed | 4742 | Success | Security | Microsoft-Windows-Security-Auditing |
+| Computer Account Deleted | 4743 | Success | Security | Microsoft-Windows-Security-Auditing |
 ### Application Crashes
 Application crashes may warrant investigation to determine if the crash is malicious or benign. Categories of crashes include Blue Screen of Death (BSOD), Windows Error Reporting (WER), Application Crash and Application Hang events. If the organization is actively using the Microsoft Enhanced Mitigation Experience Toolkit (EMET), then EMET logs can also be collected.
 
@@ -206,7 +238,7 @@ Monitoring network activities can be performed in multiple ways ranging from a n
 | --- | --- | --- | --- | --- |
 | Encrypted Data Recovery Policy Changed | 4714 | Information | Security | Microsoft-Windows-Security-Auditing |
 | Kerberos Policy Changed | 4713 | Information | Security | Microsoft-Windows-Security-Auditing |
-| Kerberos Service Ticket Req. Failed | 4769 | Information | Security | Microsoft-Windows-Security-Auditing |
+| Kerberos Service Ticket Req. Failed | 4769, 4772 | Information | Security | Microsoft-Windows-Security-Auditing |
 | Kerberos Pre-Authentication Failed | 4771 | Information | Security | Microsoft-Windows-Security-Auditing |
 | Network Policy Server Denied Access | 6273 | Information | Security | Microsoft-Windows-Security-Auditing |
 | Network Policy Server Discarded Accounting Request | 6275 | Information | Security | Microsoft-Windows-Security-Auditing |
@@ -222,6 +254,7 @@ Monitoring network activities can be performed in multiple ways ranging from a n
 | Network Share Created | 5142 | Information | Security | Microsoft-Windows-Security-Auditing |
 | Network Share Deleted | 5144 | Information | Security | Microsoft-Windows-Security-Auditing |
 | New Trust for Domain | 4706 | Information | Security | Microsoft-Windows-Security-Auditing |
+| Removed Trust for Domain | 4707 | Information | Security | Microsoft-Windows-Security-Auditing |
 | Outbound TS Connect Attempt | 1024 | Information | Microsoft-Windows-TerminalServices-RDPClient/Operational | Microsoft-Windows-TerminalServices-ClientActiveXCore |
 | RADIUS User assigned IP | 20250 | Success | RemoteAccess | Microsoft-Windows-MPRMSG |
 | RADIUS User Authenticated | 20274 | Success | RemoteAccess | Microsoft-Windows-MPRMSG |
@@ -334,6 +367,7 @@ It should be noted that an additional Program Inventory event ID 800 is generate
 | Update Packages Installed | 2 | Information | Setup | Microsoft-Windows-Servicing |
 | Updated Application | 905, 906 | Information | Microsoft-Windows-Application-Experience/Program-Inventory | Microsoft-Windows-Application-Experience |
 | Windows Update Installed | 19 | Information | System | Microsoft-Windows-WindowsUpdateClient |
+| New Service Installed | 4697 | Success | Security | Microsoft-Windows-Security-Auditing |
 ### System Integrity
 System Integrity ensures the trustworthiness of a host in the presence of manipulation. The ability to identify unusual changes to a host can hinder additional integrity compromises and possibly prevent such changes. The **Audit Registry** and **Audit Security State Change** group policies must be enabled. The Registry Modification event will not be generated unless a SACL is applied to a desired registry key or value (see the [Windows 10 and Windows Server 2016 security auditing and monitoring reference](https://www.microsoft.com/en-us/download/details.aspx?id=52630)). A non-exhaustive list identifying individual or sets of registry keys and values to monitor may be found at Microsoft's Threat Protection article titled [Use Windows Event Forwarding to help with intrusion detection](https://docs.microsoft.com/en-us/windows/threat-protection/use-windows-event-forwarding-to-assist-in-instrusion-detection) Appendix B, Microsoft's Securing PKI TechNet article on [Registry Values to Monitor](https://technet.microsoft.com/en-us/library/dn786423.aspx), SwiftOnSecurity's GitHub project titled [sysmon-config](https://github.com/SwiftOnSecurity/sysmon-config), Specter Ops's [Subverting Trust Windows](https://specterops.io/assets/resources/SpecterOps_Subverting_Trust_in_Windows.pdf) white paper, and Cylance's [Windows Registry Persistence, Part 1: Introducing, Attack, Phases and Windows Services](https://blog.cylance.com/windows-registry-persistence-part-1-introduction-attack-phases-and-windows-services) blog post.
 
@@ -342,6 +376,8 @@ System Integrity ensures the trustworthiness of a host in the presence of manipu
 | Registry Modification | 4657 | Information | Security | Microsoft-Windows-Security-Auditing |
 | System Time Changed | 1 | Information | System | Microsoft-Windows-Kernel-General |
 | System Time Changed | 4616 | Information | Security | Microsoft-Windows-Security-Auditing |
+| CrashOnAuditFail Value Changed | 4906 | Information | Security | Microsoft-Windows-Security-Auditing |
+
 
 A non-exhaustive registry key and value list to potentially monitor
 

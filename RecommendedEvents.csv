@@ -17,15 +17,48 @@ Account Usage,Password Hash Accessed,4782,Information,Security,Microsoft-Windows
 Account Usage,Password Policy Checking API called,4793,Information,Security,Microsoft-Windows-Security-Auditing
 Account Usage,Security-enabled Group Created,4731,Information,Security,Microsoft-Windows-Security-Auditing
 Account Usage,Security-Enabled group Modification,4735,Information,Security,Microsoft-Windows-Security-Auditing
+Account Usage,Security-Enabled group Deleted,4734,Information,Security,Microsoft-Windows-Security-Auditing
 Account Usage,SID History add attempted on Account,4766,Information,Security,Microsoft-Windows-Security-Auditing
 Account Usage,SID History added to Account,4765,Information,Security,Microsoft-Windows-Security-Auditing
 Account Usage,Successful User Account Login,4624,Information,Security,Microsoft-Windows-Security-Auditing
 Account Usage,Temp Profile Logon,1511,Error,Application,Microsoft-Windows-User Profiles Service
 Account Usage,User Account Deleted,4726,Information,Security,Microsoft-Windows-Security-Auditing
+Account Usage,User Account Changed,4738,Information,Security,Microsoft-Windows-Security-Auditing
 Account Usage,User Account Disabled,4725,Information,Security,Microsoft-Windows-Security-Auditing
 Account Usage,User Account Unlocked,4767,Information,Security,Microsoft-Windows-Security-Auditing
 Account Usage,User Added to Privileged Group,"4728, 4732, 4756",Information,Security,Microsoft-Windows-Security-Auditing
 Account Usage,User Right Assigned,4704,Information,Security,Microsoft-Windows-Security-Auditing
+Account Usage,User Right Removed,4705,Success,Security,Microsoft-Windows-Security-Auditing
+Account Usage,System Security Access Granted,4717,Success,Security,Microsoft-Windows-Security-Auditing
+Account Usage,System Security Access Removed,4718,Success,Security,Microsoft-Windows-Security-Auditing
+Account Usage,Member Added to Security Disabled Local Group,4746,Success,Security,Microsoft-Windows-Security-Auditing
+Account Usage,Member Removed from  Security Disabled Local Group,4747,Success,Security,Microsoft-Windows-Security-Auditing
+Account Usage,Member Added to Security Disabled Global Group,4751,Success,Security,Microsoft-Windows-Security-Auditing
+Account Usage,Member Removed from Security Disabled Global Group,4752,Success,Security,Microsoft-Windows-Security-Auditing
+Account Usage,Member Added to Security Disabled Universal Group,4761,Success,Security,Microsoft-Windows-Security-Auditing
+Account Usage,Member Removed from Security Enabled Universal Group,4757,Success,Security,Microsoft-Windows-Security-Auditing
+Account Usage,Member Removed from Security Disabled Universal Group,4762,Success,Security,Microsoft-Windows-Security-Auditing
+Account Usage,Member Removed from Security Enabled Global Group,4729,Success,Security,Microsoft-Windows-Security-Auditing
+Account Usage,An attempt was made to reset an accounts password,"4723, 4724",Success,Security,Microsoft-Windows-Security-Auditing
+Account Usage,A Groups Type was Changed,4764,Success,Security,Microsoft-Windows-Security-Auditing
+Account Usage,Security-disabled Local Group Created,4744,Success,Security,Microsoft-Windows-Security-Auditing
+Account Usage,Security-disabled Local Group Changed,4745,Success,Security,Microsoft-Windows-Security-Auditing
+Account Usage,Security-disabled Local Group Deleted,4748,Success,Security,Microsoft-Windows-Security-Auditing
+Account Usage,Security-enabled Global Group Created,4727,Success,Security,Microsoft-Windows-Security-Auditing
+Account Usage,Security-enabled Global Group Modification,4737,Success,Security,Microsoft-Windows-Security-Auditing
+Account Usage,Security-enabled Global Group Deleted,4730,Success,Security,Microsoft-Windows-Security-Auditing
+Account Usage,Security-disabled Global Group Created,4749,Success,Security,Microsoft-Windows-Security-Auditing
+Account Usage,Security-disabled Global Group Modification,4750,Success,Security,Microsoft-Windows-Security-Auditing
+Account Usage,Security-disabled Global Group Deleted,4753,Success,Security,Microsoft-Windows-Security-Auditing
+Account Usage,Security-enabled Universal Group Created,4754,Success,Security,Microsoft-Windows-Security-Auditing
+Account Usage,Security-enabled Universal Group Modification,4755,Success,Security,Microsoft-Windows-Security-Auditing
+Account Usage,Security-enabled Universal Group Deleted,4758,Success,Security,Microsoft-Windows-Security-Auditing
+Account Usage,Security-disabled Universal Group Created,4759,Success,Security,Microsoft-Windows-Security-Auditing
+Account Usage,Security-disabled Universal Group Modification,4760,Success,Security,Microsoft-Windows-Security-Auditing
+Account Usage,Security-disabled Universal Group Deleted,4763,Success,Security,Microsoft-Windows-Security-Auditing
+Account Usage,Computer Account Created,4741,Success,Security,Microsoft-Windows-Security-Auditing
+Account Usage,Computer Account Changed,4742,Success,Security,Microsoft-Windows-Security-Auditing
+Account Usage,Computer Account Deleted,4743,Success,Security,Microsoft-Windows-Security-Auditing
 Application Crashes,App Crash,1000,Error,Application,Application Error
 Application Crashes,App Error,1000,Error,Application,Application Error
 Application Crashes,App Hang,1002,Error,Application,Application Hang
@@ -107,7 +140,8 @@ Mobile Device Activities,"Wireless Security Started, Stopped, Successful, or Fai
 Mobile Device Activities,"Wireless Security Started, Stopped, Successful, or Failed","11010, 11006",Error,Microsoft-Windows-WLAN-AutoConfig/Operational,Microsoft-Windows-WLAN-AutoConfig
 Network Policy,Encrypted Data Recovery Policy Changed,4714,Information,Security,Microsoft-Windows-Security-Auditing
 Network Policy,Kerberos Policy Changed,4713,Information,Security,Microsoft-Windows-Security-Auditing
-Network Policy,Kerberos Service Ticket Req. Failed,4769,Information,Security,Microsoft-Windows-Security-Auditing
+Network Policy,Kerberos Service Ticket Requested,4768,Information,Security,Microsoft-Windows-Security-Auditing
+Network Policy,Kerberos Service Ticket Req. Failed,"4769, 4772",Information,Security,Microsoft-Windows-Security-Auditing
 Network Policy,Kerberos Pre-Authentication Failed,4771,Information,Security,Microsoft-Windows-Security-Auditing
 Network Policy,Network Policy Server Denied Access,6273,Information,Security,Microsoft-Windows-Security-Auditing
 Network Policy,Network Policy Server Discarded Accounting Request,6275,Information,Security,Microsoft-Windows-Security-Auditing
@@ -123,6 +157,7 @@ Network Policy,Network Share Checked,5145,Information,Security,Microsoft-Windows
 Network Policy,Network Share Created,5142,Information,Security,Microsoft-Windows-Security-Auditing
 Network Policy,Network Share Deleted,5144,Information,Security,Microsoft-Windows-Security-Auditing
 Network Policy,New Trust for Domain,4706,Information,Security,Microsoft-Windows-Security-Auditing
+Network Policy,Removed Trust for Domain,4707,Information,Security,Microsoft-Windows-Security-Auditing
 Network Policy,Outbound TS Connect Attempt,1024,Information,Microsoft-Windows-TerminalServices-RDPClient/Operational,Microsoft-Windows-TerminalServices-ClientActiveXCore
 Network Policy,RADIUS User assigned IP,20250,Success,RemoteAccess,Microsoft-Windows-MPRMSG
 Network Policy,RADIUS User Authenticated,20274,Success,RemoteAccess,Microsoft-Windows-MPRMSG
@@ -133,6 +168,7 @@ Network Policy,Trusted Domain Information Modified,4716,Information,Security,Mic
 Network Policy,TS Session Disconnect,4779,Information,Security,Microsoft-Windows-Security-Auditing
 Network Policy,TS Session Reconnect,4778,Information,Security,Microsoft-Windows-Security-Auditing
 Network Policy,Wireless 802.1X Auth,5632,Information,Security,Microsoft-Windows-Security-Auditing
+Network Policy,Domain Policy was Changed,4739,Information,Security,Microsoft-Windows-Security-Auditing
 PowerShell Activities,Exception Raised,4103,Information,Microsoft-Windows-Powershell/Operational,Microsoft-Windows-Powershell
 PowerShell Activities,Get-MessageTrackingLog cmdlet,800,Information,Powershell,Microsoft-Windows-Powershell
 PowerShell Activities,Remote Connection,169,Information,Powershell,Microsoft-Windows-Powershell
@@ -147,9 +183,11 @@ Software and Service Installation,Summary of Software Activities,800,Information
 Software and Service Installation,Update Packages Installed,2,Information,Setup,Microsoft-Windows-Servicing
 Software and Service Installation,Updated Application,"905, 906",Information,Microsoft-Windows-Application-Experience/Program-Inventory,Microsoft-Windows-Application-Experience
 Software and Service Installation,Windows Update Installed,19,Information,System,Microsoft-Windows-WindowsUpdateClient
+Software and Service Installation,New Service Installed,4697,Success,Security,Microsoft-Windows-Security-Auditing
 System Integrity,Registry Modification,4657,Information,Security,Microsoft-Windows-Security-Auditing
 System Integrity,System Time Changed,1,Information,System,Microsoft-Windows-Kernel-General
 System Integrity,System Time Changed,4616,Information,Security,Microsoft-Windows-Security-Auditing
+System Integrity,CrashOnAuditFail Value Changed,4906,Information,Security,Microsoft-Windows-Security-Auditing
 System or Service Failures,Windows Service Fails or Crashes,"7022, 7023, 7024, 7026, 7031, 7032, 7034",Error,System,Service Control Manager
 Task Scheduler Activities,New Task Registered,106,Information,Microsoft-Windows-TaskScheduler/Operational,Microsoft-Windows-TaskScheduler
 Task Scheduler Activities,Task Deleted,141,Information,Microsoft-Windows-TaskScheduler/Operational,Microsoft-Windows-TaskScheduler

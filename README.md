@@ -238,6 +238,7 @@ Monitoring network activities can be performed in multiple ways ranging from a n
 | --- | --- | --- | --- | --- |
 | Encrypted Data Recovery Policy Changed | 4714 | Information | Security | Microsoft-Windows-Security-Auditing |
 | Kerberos Policy Changed | 4713 | Information | Security | Microsoft-Windows-Security-Auditing |
+| Kerberos Service Ticket Requested | 4768 | Information | Security | Microsoft-Windows-Security-Auditing |
 | Kerberos Service Ticket Req. Failed | 4769, 4772 | Information | Security | Microsoft-Windows-Security-Auditing |
 | Kerberos Pre-Authentication Failed | 4771 | Information | Security | Microsoft-Windows-Security-Auditing |
 | Network Policy Server Denied Access | 6273 | Information | Security | Microsoft-Windows-Security-Auditing |
@@ -377,7 +378,6 @@ System Integrity ensures the trustworthiness of a host in the presence of manipu
 | System Time Changed | 1 | Information | System | Microsoft-Windows-Kernel-General |
 | System Time Changed | 4616 | Information | Security | Microsoft-Windows-Security-Auditing |
 | CrashOnAuditFail Value Changed | 4906 | Information | Security | Microsoft-Windows-Security-Auditing |
-
 
 A non-exhaustive registry key and value list to potentially monitor
 
